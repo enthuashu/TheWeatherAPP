@@ -53,8 +53,9 @@
   getCurrentDay();
 
   const currentDate=()=>{
-      var utc = new Date().toJSON().slice(0,10).replace(/-/g,'/');
-       today_date.innerText= utc;
+     var today = new Date();
+     today_date.innerText= today.getFullYear()+'-'+(today.getMonth()+1)+'-'+today.getDate();
+
   }
    currentDate();
  </script>
